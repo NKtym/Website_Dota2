@@ -1,0 +1,626 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=unicode">
+<title>International 2023</title>
+<style type="text/css">
+  @font-face {
+    font-family: Frijole;
+    src: url(Шрифты/Frijole-Regular.ttf);
+  }
+   @font-face {
+    font-family: Kavoon;
+    src: url(Шрифты/Kavoon-Regular.ttf);
+  }
+   @font-face {
+    font-family: Chango;
+    src: url(Шрифты/Chango-Regular.ttf);
+  }
+ a:visited{
+  	color: White;
+ }
+ 
+ .fon_button{
+ 	margin-left:15%;
+ 	height: 1px; 
+  width: 1200px;
+	shape-outside: circle(); 
+	background: black;
+	display:flex;
+  justify-content: space-around;
+ }
+ .button{
+  	height: 20px; 
+  	width: 160px;
+  	shape-outside: circle(); 
+	  background: #D9D9D9;
+ }
+  .cadre{ 
+  	float: right; 
+  	height: 335px; 
+  	width: 800px; 
+  	shape-outside: circle(); 
+  	border-radius: 45px;
+	  background: linear-gradient(180deg, #93C5E3 0%, rgba(0, 159, 255, 0.29) 100%);
+}
+   .href_head{
+   	color: black;
+   	text-align:center;
+   }
+   .href_bottom_1{
+   	margin-top: -90px;
+   	margin-left: 30px;
+   	text-shadow: 2px 1px 2px black;
+   	color: #FFF;
+   }
+   .href_bottom_2{
+   	margin-top: -34px;
+   	margin-left: 110px;
+   	text-shadow: 2px 1px 2px black;
+   	color: #FFF;
+   }
+   .href_bottom_3{
+   	margin-top: -34px;
+   	margin-left: 240px;
+   	text-shadow: 2px 1px 2px black;
+   	color: #FFF;
+   }
+   .href_bottom_4{
+   	margin-top: -34px;
+   	margin-left: 315px;
+   	text-shadow: 2px 1px 2px black;
+   	color: #FFF;
+   }
+   .href_bottom_5{
+   	margin-top: -5px;
+   	margin-left: 38px;
+   	text-shadow: 2px 1px 2px black;
+   	color: #FFF;
+   }
+   .href_bottom_6{
+   	margin-top: -34px;
+   	margin-left: 153px;
+   	text-shadow: 2px 1px 2px black;
+   	color: #FFF;
+   }
+   .href_bottom_7{
+   	margin-top: -34px;
+   	margin-left: 283px;
+   	text-shadow: 2px 1px 2px black;
+   	color: #FFF;
+   }
+   .block_headline{
+   	color: #FFF;
+	  font-family: Frijole;
+	  font-size: 40px;
+   	text-align: center;
+   }
+   .text_bottom{
+   	text-shadow: 2px 1px 2px black;
+   	color: #FFF;
+   	text-align: center;
+   }
+   .head_headline{
+   	text-shadow: 3px 3px 4px black;
+   	color: #FFF;
+   	font-family: Kavoon;
+	  font-size: 60px;
+   	text-align: center;
+   }
+   .text_block_1{
+   	text-shadow: 5px 5px 6px black;
+   	color: #FFF;
+   	font-family: Chango;
+   	font-size: 24px;
+   	text-align: center;
+   }
+   .text_block_2{
+   	text-shadow: 5px 5px 6px black;
+   	color: #FFF;
+   	font-family: Chango;
+   	font-size: 24px;
+   	text-align: center;
+   	margin-top: 40px;
+   }
+   .text_block_3{
+   	text-shadow: 5px 5px 6px black;
+   	color: #FFF;
+   	font-family: Chango;
+   	font-size: 24px;
+   	text-align: center;
+   	margin-top: 75px;
+   }
+   .head{
+   	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	background: url("Картинки/Inthead.png");
+  	background-repeat: no-repeat; 
+  	background-size: cover; 
+  	background-position: center;
+  	height: 1000px; 
+   }
+   .block{
+   	display:flex;
+    justify-content: space-around;
+    opacity: 0;
+   }
+   .img_block{
+   	width: 650px;
+	  height: 330px; 
+   	border-radius: 0px 90px;
+   }
+   .img_block_2{
+   	margin-top:-80px;
+	  margin-left:82%;
+   	width:305px;
+   	display:flex;
+    justify-content: space-around;
+   }
+   .img_bottom{
+   	margin-right:12px;
+   	float: right; 
+   	width: 80px;
+   	height: 80px; 
+   }
+   .img_bottom_2{
+   	margin-top:-14px;
+   	float: right; 
+   	width: 110px;
+   	height: 110px; 
+   }
+   .bottom{
+   	background: #242526;
+   	width: 100%;
+   	height: 100px; 
+   }
+   .frames{
+   	width: 1000px;
+   	height: 400px;
+   	border-radius: 45px;
+   }
+   .href_mail{
+   	text-shadow: 2px 1px 2px black;
+   	color: #FFF;
+   }
+   .block.element-show{
+    opacity: 1;
+    transition: opacity 1s;
+   }
+   .header_fixed{
+    position: fixed;
+    top: -20px;
+    left: 0;
+    padding: 10px 0;
+    animation: showElement;
+    animation-duration: 1s;
+  }
+  @keyframes showElement{
+    0% {
+        opacity: 0;
+        top: -70px;
+    }
+    
+    100% {
+        opacity: 1;
+        top: -20px;
+    }
+  }
+  @media (max-width: 800px){
+    video{
+      width: 700px;
+      height: 400px;
+    }
+	  .fon_button{
+      width: 650px;
+      margin-left:7%;
+    }
+    .button{
+      height: 18px; 
+      width: 80px;
+    }
+    .href_head{
+      font-size: 12px
+    }
+    .head_headline{
+      font-size: 40px;
+    }
+    .head{
+      height: 600px;
+    }
+    .block_headline{
+      font-size: 28px;
+    }
+    .img_block{
+      height: 200px; 
+      width: 330px;
+    }
+    .text_block_1{
+      margin-top: 15px;
+      font-size: 13px;
+    }
+    .text_block_2{
+      font-size: 13.5px;
+      margin-top: 24px;
+    }
+    .text_block_3{
+      font-size: 15px;
+      margin-top: 27px;
+    }
+    .cadre{ 
+  	  height: 205px; 
+  	  width: 400px;
+    }
+    .img_bottom_2{
+      margin-top: 8px;
+      width: 80px;
+   	  height: 80px; 
+    }
+    .img_bottom{
+      margin-top: 18px;
+      width: 60px;
+   	  height: 60px; 
+    }
+    .text_bottom{
+      margin-top:10px;
+      font-size:12px;
+    }
+    .href_bottom_1{
+      margin-top: -70px;
+      margin-left: 20px;
+      font-size:13px;
+    }
+    .href_bottom_2{
+      margin-top: -30px;
+      font-size:13px;
+      margin-left: 75px;
+    }
+    .href_bottom_3{
+      margin-top: -30px;
+      font-size:13px;
+      margin-left: 168px;
+    }
+    .href_bottom_4{
+      margin-left: 220px;
+      margin-top: -30px;
+      font-size:13px;
+    }
+    .href_bottom_5{
+      margin-left: 27px;
+      font-size:13px;
+    }
+    .href_bottom_6{
+      margin-left: 107px;
+      margin-top: -30px;
+      font-size:13px;
+    }
+    .href_bottom_7{
+      margin-left: 201px;
+      margin-top: -30px;
+      font-size:13px;
+    }
+    .bottom{
+      height: 78px;
+    }
+    .img_block_2{
+      width:270px;
+      margin-left:65%
+    }
+  }
+  @media (max-width: 1400px) and (min-width: 1100px){
+    video{
+      width: 1100px;
+      height: 600px;
+    }
+	  .fon_button{
+      width: 1100px;
+      margin-left:10%;
+    }
+    .button{
+      height: 20px; 
+      width: 130px;
+    }
+    .href_head{
+      font-size: 16px
+    }
+    .head_headline{
+      font-size: 60px;
+    }
+    .head{
+      height: 850px;
+    }
+    .block_headline{
+      font-size: 32px;
+    }
+    .img_block{
+      height: 300px; 
+      width: 530px;
+    }
+    .text_block_1{
+      margin-top: 28px;
+      font-size: 18px;
+    }
+    .text_block_2{
+      font-size: 19px;
+      margin-top: 38px;
+    }
+    .text_block_3{
+      font-size: 21px;
+      margin-top: 45px;
+    }
+    .cadre{ 
+  	  height: 305px; 
+  	  width: 550px;
+    }
+    .img_bottom_2{
+      margin-top: -20px;
+      width: 110px;
+   	  height: 110px; 
+    }
+    .img_bottom{
+      margin-top: -6px;
+      width: 80px;
+   	  height: 80px; 
+    }
+    .text_bottom{
+      margin-top:10px;
+      font-size:17px;
+    }
+    .href_bottom_1{
+      margin-top: -95px;
+      margin-left: 40px;
+      font-size:16px;
+    }
+    .href_bottom_2{
+      margin-top: -34px;
+      font-size:16px;
+      margin-left: 110px;
+    }
+    .href_bottom_3{
+      margin-top: -34px;
+      font-size:16px;
+      margin-left: 228px;
+    }
+    .href_bottom_4{
+      margin-left: 294px;
+      margin-top: -34px;
+      font-size:16px;
+    }
+    .href_bottom_5{
+      margin-top: 10px;
+      margin-left: 47px;
+      font-size:16px;
+    }
+    .href_bottom_6{
+      margin-left: 150px;
+      margin-top: -34px;
+      font-size:16px;
+    }
+    .href_bottom_7{
+      margin-left: 270px;
+      margin-top: -34px;
+      font-size:16px;
+    }
+    .bottom{
+      height: 110px;
+    }
+    .img_block_2{
+      width:270px;
+      margin-left:78%
+    }
+  }
+  @media (max-width: 1100px) and (min-width: 800px){
+    video{
+      width: 900px;
+      height: 500px;
+    }
+	  .fon_button{
+      width: 900px;
+      margin-left:7%;
+    }
+    .button{
+      height: 20px; 
+      width: 100px;
+    }
+    .href_head{
+      font-size: 15px
+    }
+    .head_headline{
+      font-size: 52px;
+    }
+    .head{
+      height: 800px;
+    }
+    .block_headline{
+      font-size: 28px;
+    }
+    .img_block{
+      height: 280px; 
+      width: 480px;
+    }
+    .text_block_1{
+      margin-top: 25px;
+      font-size: 16px;
+    }
+    .text_block_2{
+      font-size: 17px;
+      margin-top: 40px;
+    }
+    .text_block_3{
+      font-size: 19px;
+      margin-top: 40px;
+    }
+    .cadre{ 
+  	  height: 280px; 
+  	  width: 480px;
+    }
+    .img_bottom_2{
+      margin-top: 8px;
+      width: 80px;
+   	  height: 80px; 
+    }
+    .img_bottom{
+      margin-top: 18px;
+      width: 60px;
+   	  height: 60px; 
+    }
+    .text_bottom{
+      margin-top:10px;
+      font-size:12px;
+    }
+    .href_bottom_1{
+      margin-top: -70px;
+      margin-left: 20px;
+      font-size:13px;
+    }
+    .href_bottom_2{
+      margin-top: -30px;
+      font-size:13px;
+      margin-left: 75px;
+    }
+    .href_bottom_3{
+      margin-top: -30px;
+      font-size:13px;
+      margin-left: 168px;
+    }
+    .href_bottom_4{
+      margin-left: 220px;
+      margin-top: -30px;
+      font-size:13px;
+    }
+    .href_bottom_5{
+      margin-left: 27px;
+      font-size:13px;
+    }
+    .href_bottom_6{
+      margin-left: 107px;
+      margin-top: -30px;
+      font-size:13px;
+    }
+    .href_bottom_7{
+      margin-left: 201px;
+      margin-top: -30px;
+      font-size:13px;
+    }
+    .bottom{
+      height: 78px;
+    }
+    .img_block_2{
+      width:270px;
+      margin-left:75%
+    }
+  }
+  </style> 
+</head>
+
+<body bgcolor=black>
+  <div class="fon_button">
+  <a href="#header">
+  <div class="button">
+  	<p class="href_head">Home</p>
+  </div>
+  </a>
+  <a href="#block_1">
+  <div class="button">
+  	<p class="href_head">Iternational</p>
+  </div>
+  </a>
+  <a href="#block_2">
+  <div class="button">
+  	<p class="href_head">Place</p>
+  </div>
+  </a>
+  <a href="#block_3">
+  <div class="button">
+  	 <p class="href_head">Teams</p>
+  </div>
+  </a>
+  <a href="#block_4">
+  <div class="button">
+  	    <p class="href_head">Rus teams</p>
+  </div>
+  </a>
+  <a href="#block_5">
+  <div class="button">
+  	    <p class="href_head">Promo video</p>
+  </div>
+  </a>
+  <a href="#bottomer">
+  <div class="button">
+  	    <p class="href_head">Contact</p>
+  </div>
+  </a>
+  </div>
+  <a name="header">
+  <div class="head">
+    <p class="head_headline">The International 2023</p>
+  </div>
+  </a>
+  <a name="block_1">
+  <div class="block">
+    <h1 class="block_headline">What's The International?</h1>
+  </div>
+  <div class="block">
+    <img class="img_block" src="Картинки/Ээээ.jpg">
+    <div class="cadre">
+      <p class="text_block_1">The International (TI) is an annual esports world championship for the five-on-five video game Dota 2. Produced by the game's developer Valve, the International is the final event of the Dota Pro Circuit (DPC) and consists of 20 teams: 12 based on final results from the DPC; six from North America, South America, Southeast Asia, China, Eastern Europe, and Western Europe regional leagues; and two from last-chance qualifiers.</p>
+    </div>
+  </div>
+  </a>
+  <a name="block_2">
+  <div class="block">
+    <h1 class="block_headline">Place</h1>
+  </div>
+  <div class="block">
+    <img class="img_block" src="Картинки/Сиэтл.jpg">
+    <div class="cadre">
+    <p class="text_block_2">The annual main Dota 2 tournament, The International, will once again host Seattle in 2023, the city where developers Valve are headquartered. The tournament has previously been held in Seattle, Washington, six times in a row - from 2012 to 2017. After that, Valve decided to try new locations, and TI was held in a different region each time.</p>
+    </div>
+  </div>
+  </a>
+  <a name="block_3">
+  <div class="block">
+    <h1 class="block_headline">Teams</h1>
+  </div>
+  <div class="block">
+    <img class="img_block" src="Картинки/Команды.jpeg">
+    <div class="cadre">
+    <p class="text_block_3">The following teams will take part in the tournament: Team Liquid Gaimin Gladiators Tundra 9Pandas Evil Geniuses PSG.LGD Rebellion Talon Esports beastcoast Team Spirit TSM BetBoom Azure Ray nouns Virtus.pro Key Stars Thunder Entity Team SMG Quest</p>
+    </div>
+  </div>
+  </a>
+  <a name="block_4">
+  <div class="block">
+    <h1 class="block_headline">Russian teams</h1>
+  </div>
+  <div class="block">
+    <iframe src="s1.html" class="frames"></iframe>
+  </div>
+  </a>
+  <a name="block_5">
+  <div class="block">
+    <h1 class="block_headline">Promo video</h1>
+  </div>
+  <div class="block">
+    <center><video controls="controls" src="Картинки/TII.mp4"></video></center>
+  </div>
+  </a>
+  <a name="bottomer">
+  <div class="bottom">
+    <p class="text_bottom">CONTACT ME<br><br>Developer Pavel:<br>+7 (913) 769 90 93<br><a class="href_mail" href="mailto:Pasha04072004@gmail.com">Pasha04072004@gmail.com</a></p>
+    <p class="href_bottom_1"><a href="#header">Home</a></p>
+    <p class="href_bottom_2"><a href="#block_1">Iternational</a></p>
+    <p class="href_bottom_3"><a href="#block_2">Place</a></p>
+    <p class="href_bottom_4"><a href="#block_3">Teams</a></p>
+    <p class="href_bottom_5"><a href="#block_4">Rus teams</a></p>
+    <p class="href_bottom_6"><a href="#block_5">Promo video</a></p>
+    <p class="href_bottom_7"><a href="#bottomer">Contact</a></p>
+    <div class="img_block_2">
+    	<a href="https://t.me/Ypmarmelad"><img class="img_bottom_2" src="Картинки/Тг.png"></a>
+    	<a href="https://vk.com/ppivchansky"><img class="img_bottom" src="Картинки/VK_Blue_Logo_t.png"></a>
+    	<a href="mailto:Pasha04072004@gmail.com"><img class="img_bottom" src="Картинки/google.png"></a>
+    </div>
+  </div>
+  </a>
+  <script src="sc.js"></script>
+</body>
+</html>
